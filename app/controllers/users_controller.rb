@@ -7,8 +7,8 @@ class UsersController < ApplicationController
         else
           render json: { errors: user.errors.full_messages }, status: :bad_request
         end
-    end
-      
+    end    
+
       private
       
     def user_params
